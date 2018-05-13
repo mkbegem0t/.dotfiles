@@ -24,6 +24,11 @@ git clone https://github.com/Shougo/vimfiler.vim.git ./.vim/pack/vimfilter/start
 
 ln -sf ~/.dotfiles/.vimrc ~/.vimrc
 ln -sf ~/.dotfiles/.vim ~/.vim
-ln -sf ~/.dotfiles/.bashrc ~/.bashrc
-ln -sf ~/.dotfiles/.bash_profile ~/.bash_profile
-ln -sf ~/.dotfiles/.dir_colors ~/.dir_colors
+if [ `uname` = "Darwin" ]; then
+	ln -sf ~/.dotfiles/.bashrc ~/.bashrc
+	ln -sf ~/.dotfiles/.bash_profile ~/.bash_profile
+	ln -sf ~/.dotfiles/.dir_colors ~/.dir_colors
+elif [ `uname` = "Linux" ]; then
+	mkdir -p .color
+	git clone git://github.com/altercation/solarized.git ./.color/solarized
+fi

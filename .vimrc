@@ -33,6 +33,10 @@ set splitright
 set splitbelow
 set smartindent
 set autoindent
+set noundofile
+set encoding=utf-8
+set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+set fileformats=unix,dos,mac
 
 let mapleader = "\<Space>"
 let php_sql_query = 1
@@ -62,3 +66,5 @@ noremap <C-F><C-L> :VimFiler -split -simple -winwidth=30 -no-quit
 syntax on
 highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=#666666
 au BufNewFile,BufRead * match ZenkakuSpace /　/
+
+colorscheme industry

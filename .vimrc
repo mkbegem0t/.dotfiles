@@ -40,6 +40,7 @@ set hidden
 set encoding=utf-8
 set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
 set fileformats=unix,dos,mac
+set clipboard=unnamedplus
 
 let mapleader = "\<Space>"
 let php_sql_query = 1

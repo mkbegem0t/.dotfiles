@@ -38,7 +38,7 @@ set autoindent
 set noundofile
 set hidden
 set encoding=utf-8
-set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+set fileencodings=utf-8,iso-2022-jp,euc-jp,sjis
 set fileformats=unix,dos,mac
 set clipboard=unnamedplus
 
@@ -70,5 +70,3 @@ noremap <C-F><C-L> :VimFiler -split -simple -winwidth=30 -no-quit
 syntax on
 highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=#666666
 au BufNewFile,BufRead * match ZenkakuSpace /　/
-
-colorscheme industry
